@@ -1,0 +1,51 @@
+<html>
+<head>
+	<link rel="icon" type="image/gif" href="./resources/devil.gif">
+	<meta charset='utf-8'>
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> 
+	<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="getTweets.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+	<link rel="stylesheet" type="text/css" href="main.css">
+	
+	<title>Tweet Search</title>
+</head>
+<body>
+	<div id="container">
+		<div id="search-container">
+
+			<a href="index.html"><div id="toogle"></div></a>
+
+			<form id="search-form">
+				<input type="text" id="search-field" placeholder="Tweet Search" onfocus="this.placeholder=''" onblur="this.placeholder='Tweet Search'"/>
+				<button id="search-button">
+					<span id="button-background"></span>
+				</button>
+				<div id="options-container">
+					<div id="tweet-count-container">
+						<span id="text">Tweet Count:</span>
+						<span id="tweet-amount">5</span>
+						<div id="tweet-slider"></div>
+					</div>
+					<div id="refresh-time-container">
+						<span id="text">Refresh Time:</span>
+						<span id="refresh-amount">10</span>
+						<div id="refresh-slider"></div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div id="tweet-container">
+			<div id="tweets">
+				<div class="tweet template">
+					<div class="user">
+						<a class="link" target="_blank" href=""> <img class="pic" src='./resources/template.png' /></a>
+						<div class="username"></div>
+						<div class="content"></div>
+					</div>				
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
